@@ -6,7 +6,7 @@ import { PiFlowerLotusBold } from "react-icons/pi";
 import { MdLocalDining } from "react-icons/md";
 import { MdFamilyRestroom } from "react-icons/md";
 
-function page() {
+function Page() {
   const activities = [
     {
       id: 1,
@@ -168,4 +168,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

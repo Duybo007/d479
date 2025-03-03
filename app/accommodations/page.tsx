@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 
-function page() {
+function Page() {
   const accommodations = [
     {
       id: 1,
@@ -134,31 +134,44 @@ function page() {
         </div>
 
         <div className="flex flex-wrap gap-6">
-        {filterAccommodations().map((acc) => (
-          <div key={acc.id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-            <div>
-              <img className="rounded-t-lg max-h-[200px] object-cover w-[300px]" src={acc.image} alt={acc.title} />
-            </div>
-            <div className="p-5 flex justify-between">
+          {filterAccommodations().map((acc) => (
+            <div
+              key={acc.id}
+              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+            >
               <div>
-                <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{acc.title}</h5>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{acc.description}</p>
+                <img
+                  className="rounded-t-lg max-h-[200px] object-cover w-[300px]"
+                  src={acc.image}
+                  alt={acc.title}
+                />
               </div>
-              <div className="flex mt-2">
-                <FaStar />
-                <div>{acc.rating}</div>
+              <div className="p-5 flex justify-between">
+                <div>
+                  <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    {acc.title}
+                  </h5>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    {acc.description}
+                  </p>
+                </div>
+                <div className="flex mt-2">
+                  <FaStar />
+                  <div>{acc.rating}</div>
+                </div>
+              </div>
+              <div className="flex justify-between px-5 pb-5 items-center">
+                <p>${acc.price}/night</p>
+                <div className="p-2 bg-[#008080] text-white rounded-lg cursor-pointer">
+                  Book Now
+                </div>
               </div>
             </div>
-            <div className="flex justify-between px-5 pb-5 items-center">
-              <p>${acc.price}/night</p>
-              <div className="p-2 bg-[#008080] text-white rounded-lg cursor-pointer">Book Now</div>
-            </div>
-          </div>
-        ))}
+          ))}
         </div>
       </div>
     </div>
   );
 }
 
-export default page;
+export default Page;
