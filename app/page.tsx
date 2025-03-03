@@ -25,12 +25,9 @@ export default function Home() {
               Discover amazing culture and services that await you.
             </p>
             <div className="flex gap-4">
-              <a
-                href="#"
-                className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-lg text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
-              >
+              <div className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-lg text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
                 Plan Your Trip
-              </a>
+              </div>
               <a
                 href="#"
                 className="bg-white text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-lg text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
@@ -64,19 +61,19 @@ export default function Home() {
           <div className="font-semibold text-4xl">Featured Attractions</div>
           <div className="flex gap-4">
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
+              <div>
                 <img
                   className="rounded-t-lg w-[300px] h-[200px]"
                   src="https://images.unsplash.com/photo-1599837139010-617a01b35781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1933&q=80"
                   alt=""
                 />
-              </a>
+              </div>
               <div className="p-5">
-                <a href="#">
+                <div>
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Beaches
                   </h5>
-                </a>
+                </div>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                   Explore our pristine beaches
                 </p>
@@ -84,19 +81,19 @@ export default function Home() {
             </div>
 
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
+              <div>
                 <img
                   className="rounded-t-lg w-[300px] h-[200px]"
                   src="https://www.tahititourisme.com/app/uploads/2023/07/cascade-de-la-vallee-de-la-maroto-a-myles-mcguinness-1.webp"
                   alt=""
                 />
-              </a>
+              </div>
               <div className="p-5">
-                <a href="#">
+                <div>
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Rainforest Tours
                   </h5>
-                </a>
+                </div>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                   Discover exotic wildlife
                 </p>
@@ -104,19 +101,19 @@ export default function Home() {
             </div>
 
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
+              <div>
                 <img
                   className="rounded-t-lg w-[300px] h-[200px]"
                   src="https://media.istockphoto.com/id/157480366/photo/mount-roto-nui-volcanic-mountain-moorea-island.jpg?s=612x612&w=0&k=20&c=ADOARLZbDLZgRBLLXQtvTzAnIpsJXkK_eEdURw7wUVg="
                   alt=""
                 />
-              </a>
+              </div>
               <div className="p-5">
-                <a href="#">
+                <div>
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Volcano Visits
                   </h5>
-                </a>
+                </div>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                   Experience natural wonders
                 </p>
@@ -124,19 +121,19 @@ export default function Home() {
             </div>
 
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
+              <div>
                 <img
                   className="rounded-t-lg w-[300px] h-[200px]"
                   src="https://travelsquire.com/ts/wp-content/uploads/2013/09/4343975887_778a195bb5_o.jpg"
                   alt=""
                 />
-              </a>
+              </div>
               <div className="p-5">
-                <a href="#">
+                <div>
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Nightlife
                   </h5>
-                </a>
+                </div>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                   Enjoy evening entertainment
                 </p>

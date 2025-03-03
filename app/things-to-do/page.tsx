@@ -58,19 +58,19 @@ function page() {
 
         <div className="flex flex-wrap gap-6">
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
+            <div>
               <img
                 className="rounded-t-lg max-h-[200px] w-full object-cover"
                 src="https://res.cloudinary.com/manawa/image/upload/c_fill,g_auto,h_630,w_1200,q_auto/articles/most-beautiful-spots-for-your-first-scuba-dive/61396758347_kwukov"
                 alt=""
               />
-            </a>
+            </div>
             <div className="p-5">
-              <a href="#">
+              <div>
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   Scuba Diving Adventure
                 </h5>
-              </a>
+              </div>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Explore vibrant coral reefs and marine life with our experienced
                 instructors.
@@ -85,19 +85,19 @@ function page() {
           </div>
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
+            <div>
               <img
                 className="rounded-t-lg max-h-[200px] w-full object-cover"
                 src="https://www.sanctuarysalondayspa.com/wp-content/uploads/2019/08/spa-services-5.jpg"
                 alt=""
               />
-            </a>
+            </div>
             <div className="p-5">
-              <a href="#">
+              <div>
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   Luxury Spa Day
                 </h5>
-              </a>
+              </div>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Indulge in a day of relaxation with our signature spa
                 treatments.
@@ -112,19 +112,19 @@ function page() {
           </div>
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
+            <div>
               <img
                 className="rounded-t-lg max-h-[200px] w-full object-cover"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjN6YrQgnf5hhAEGOKXLmfnLhJaNXrivpgYEzzR1LYAYeD1giNflJvEWxK-WlGhq8mPzY&usqp=CAU"
                 alt=""
               />
-            </a>
+            </div>
             <div className="p-5">
-              <a href="#">
+              <div>
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   Culinary Experience
                 </h5>
-              </a>
+              </div>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Taste the authentic flavors of Taniti with our guided food tour.
               </p>

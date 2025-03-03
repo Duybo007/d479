@@ -67,20 +67,20 @@ function page() {
 
         <div className="flex flex-wrap gap-6">
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
+            <div>
               <img
                 className="rounded-t-lg max-h-[200px] object-cover w-[300px]"
                 src="https://www.pioneer-cbh.com/app/uploads/sites/33/2021/08/25-PIONEER-BEACH-HOTEL-SUPERIOR-DELUXE-ROOM-SV.jpg"
                 alt=""
               />
-            </a>
+            </div>
             <div className="p-5 flex justify-between">
               <div>
-                <a href="#">
+                <div >
                   <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Luxury Beach Resort
                   </h5>
-                </a>
+                </div>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                   Hotel • Beachfront
                 </p>
@@ -99,13 +99,13 @@ function page() {
           </div>
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
+            <div >
               <img
                 className="rounded-t-lg max-h-[200px] object-cover w-[300px]"
                 src="https://images.trvl-media.com/lodging/2000000/1490000/1489300/1489274/20306c1b.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill"
                 alt=""
               />
-            </a>
+            </div>
             <div className="p-5 flex justify-between">
               <div>
                 <a href="#">
@@ -131,20 +131,20 @@ function page() {
           </div>
 
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
+            <div>
               <img
                 className="rounded-t-lg max-h-[200px] object-cover w-[300px]"
                 src="https://d3glb5zioac6h9.cloudfront.net/uploads/sources/497766/detail_large/Blue_Vista_05.jpg?1691692473"
                 alt=""
               />
-            </a>
+            </div>
             <div className="p-5 flex justify-between">
               <div>
-                <a href="#">
+                <div>
                   <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Oceanfront Villa
                   </h5>
-                </a>
+                </div>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                   Beach House • Private
                 </p>
