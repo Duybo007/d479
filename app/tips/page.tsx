@@ -38,7 +38,7 @@ function page() {
               </div>
               <p>
                 Tanitians are warm and welcoming. When greeting locals, a smile
-                and a simple 'hello' go a long way.
+                and a simple &apos;hello&apos; go a long way.
               </p>
               <div className="p-3 rounded-lg bg-[#008080] max-w-fit text-white">
                 Learn More
@@ -66,15 +66,15 @@ function page() {
               <ul>
                 <li className="flex gap-2">
                   <FaCheck />
-                  Hello: 'Talofa'
+                  Hello: &apos;Talofa&apos;
                 </li>
                 <li className="flex gap-2">
                   <FaCheck />
-                  Thank you: 'Fa'afetai'
+                  Thank you: &apos;Fa&apos;afetai&apos;
                 </li>
                 <li className="flex gap-2">
                   <FaCheck />
-                  Goodbye: 'Tofa'
+                  Goodbye: &apos;Tofa&apos;
                 </li>
               </ul>
               <div className="p-3 rounded-lg bg-[#008080] max-w-fit text-white">
@@ -98,7 +98,7 @@ function page() {
               </div>
               <p>
                 Taniti uses the U.S. dollar. Most businesses accept major credit
-                cards, but it's good to carry some cash for smaller vendors.
+                cards, but it&apos;s good to carry some cash for smaller vendors.
               </p>
               <ul>
                 <li className="flex gap-2">
@@ -134,7 +134,7 @@ function page() {
                 Safety Tips
               </div>
               <p>
-                Taniti is a safe destination, but it's always good to stay aware
+                Taniti is a safe destination, but it&apos;s always good to stay aware
                 of your surroundings and keep your belongings secure.
               </p>
               <ul>
