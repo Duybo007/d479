@@ -1,0 +1,170 @@
+import React from "react";
+import { FaStar } from "react-icons/fa";
+
+function page() {
+  return (
+    <div className="h-screen max-w-screen-xl mx-auto">
+      <div className="flex flex-col bg-gray-50 py-12 h-full">
+        <h1 className="text-5xl pb-4">Find Your Perfect Stay</h1>
+
+        <div className="bg-white p-6 flex justify-between">
+          <form className="w-1/2">
+            <label
+              htmlFor="default-search"
+              className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+            >
+              Search
+            </label>
+            <div className="relative">
+              <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <svg
+                  className="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="search"
+                id="default-search"
+                className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search..."
+                required
+              />
+            </div>
+          </form>
+
+          <div className="flex gap-4">
+            <select id="type" className="border rounded-lg px-3 mr-3">
+              <option value="all">All Types</option>
+              <option value="hotel">Hotel</option>
+              <option value="bb">B&B</option>
+              <option value="beach-house">Beach House</option>
+            </select>
+            <select id="type" className="border rounded-lg px-3 mr-3">
+              <option value="all">Price Range</option>
+              <option value="0-100">$0 - $100</option>
+              <option value="100-300">$100 - $300</option>
+              <option value="300-500">$300 - $500</option>
+            </select>
+            <select id="type" className="border rounded-lg px-3">
+              <option value="all">Rating</option>
+              <option value="hotel">5 Stars</option>
+              <option value="bb">4+ Stars</option>
+              <option value="beach-house">3+ Stars</option>
+            </select>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap gap-6">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img
+                className="rounded-t-lg max-h-[200px] object-cover w-[300px]"
+                src="https://www.pioneer-cbh.com/app/uploads/sites/33/2021/08/25-PIONEER-BEACH-HOTEL-SUPERIOR-DELUXE-ROOM-SV.jpg"
+                alt=""
+              />
+            </a>
+            <div className="p-5 flex justify-between">
+              <div>
+                <a href="#">
+                  <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Luxury Beach Resort
+                  </h5>
+                </a>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Hotel • Beachfront
+                </p>
+              </div>
+              <div className="flex mt-2">
+                <FaStar />
+                <div>4.8</div>
+              </div>
+            </div>
+            <div className="flex justify-between px-5 pb-5 items-center">
+              <p>$299/night</p>
+              <div className="p-2 bg-[#008080] text-white rounded-lg cursor-pointer">
+                Book Now
+              </div>
+            </div>
+          </div>
+
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img
+                className="rounded-t-lg max-h-[200px] object-cover w-[300px]"
+                src="https://images.trvl-media.com/lodging/2000000/1490000/1489300/1489274/20306c1b.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill"
+                alt=""
+              />
+            </a>
+            <div className="p-5 flex justify-between">
+              <div>
+                <a href="#">
+                  <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Cozy B&B Inn
+                  </h5>
+                </a>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  B&B • City Center
+                </p>
+              </div>
+              <div className="flex mt-2">
+                <FaStar />
+                <div>4.8</div>
+              </div>
+            </div>
+            <div className="flex justify-between px-5 pb-5 items-center">
+              <p>$149/night</p>
+              <div className="p-2 bg-[#008080] text-white rounded-lg cursor-pointer">
+                Book Now
+              </div>
+            </div>
+          </div>
+
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img
+                className="rounded-t-lg max-h-[200px] object-cover w-[300px]"
+                src="https://d3glb5zioac6h9.cloudfront.net/uploads/sources/497766/detail_large/Blue_Vista_05.jpg?1691692473"
+                alt=""
+              />
+            </a>
+            <div className="p-5 flex justify-between">
+              <div>
+                <a href="#">
+                  <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Oceanfront Villa
+                  </h5>
+                </a>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Beach House • Private
+                </p>
+              </div>
+              <div className="flex mt-2">
+                <FaStar />
+                <div>4.8</div>
+              </div>
+            </div>
+            <div className="flex justify-between px-5 pb-5 items-center">
+              <p>$499/night</p>
+              <div className="p-2 bg-[#008080] text-white rounded-lg cursor-pointer">
+                Book Now
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default page;
