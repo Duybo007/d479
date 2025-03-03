@@ -1,10 +1,19 @@
 "use client"
-import React, { useState } from "react";
+import React, { JSX, useState } from "react";
 import { FaHiking } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { PiFlowerLotusBold } from "react-icons/pi";
 import { MdLocalDining } from "react-icons/md";
 import { MdFamilyRestroom } from "react-icons/md";
+
+interface Location {
+  name: string;
+}
+
+interface ActivityType {
+  name: string;
+  icon: JSX.Element;
+}
 
 function Page() {
   const activities = [
@@ -65,8 +74,8 @@ function Page() {
 
   const locations = ["Taniti City", "Merriton Landing", "Yellow Beach"];
 
-  const [selectedActivity, setSelectedActivity] = useState(null);
-  const [selectedLocation, setSelectedLocation] = useState(null);
+  const [selectedActivity, setSelectedActivity] = useState<string | null>(null);
+  const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
 
   const filteredActivities = activities.filter(
     (activity) =>
@@ -85,7 +94,7 @@ function Page() {
           <div className="flex flex-col w-1/2">
             <p>Activity Type</p>
             <div className="flex gap-4 mt-3 flex-wrap">
-              {activityTypes.map((type: any) => (
+              {activityTypes.map((type: ActivityType) => (
                 <div
                   key={type.name}
                   className={`flex py-1 px-3 gap-2 justify-center items-center border rounded-full cursor-pointer 
@@ -110,7 +119,7 @@ function Page() {
           <div className="flex flex-col w-1/2">
             <p>Location</p>
             <div className="flex gap-4 mt-3 flex-wrap">
-              {locations.map((loc: any) => (
+              {locations.map((loc: string) => (
                 <div
                   key={loc}
                   className={`flex py-1 px-3 gap-2 justify-center items-center border rounded-full cursor-pointer 
