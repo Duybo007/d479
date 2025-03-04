@@ -6,10 +6,7 @@ import { PiFlowerLotusBold } from "react-icons/pi";
 import { MdLocalDining } from "react-icons/md";
 import { MdFamilyRestroom } from "react-icons/md";
 
-interface Location {
-  name: string;
-}
-
+  
 interface ActivityType {
   name: string;
   icon: JSX.Element;
