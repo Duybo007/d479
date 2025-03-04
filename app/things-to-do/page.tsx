@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { JSX, useState } from "react";
 import { FaHiking } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -56,13 +56,15 @@ function Page() {
     {
       id: 4,
       title: "Taniti City Zoo Tour",
-      description: "Enjoy a fun-filled day exploring exotic animals and interactive exhibits with the whole family.",
+      description:
+        "Enjoy a fun-filled day exploring exotic animals and interactive exhibits with the whole family.",
       price: "$50",
       difficulty: "Easy",
-      image: "https://www.thebethlists.com/uploads/8/6/4/5/8645885/fullsizeoutput-94cd_orig.jpeg",
+      image:
+        "https://www.thebethlists.com/uploads/8/6/4/5/8645885/fullsizeoutput-94cd_orig.jpeg",
       activityType: "Family Friendly",
       location: "Taniti City",
-    }
+    },
   ];
 
   const activityTypes = [
@@ -85,10 +87,18 @@ function Page() {
   return (
     <div className="h-screen max-w-screen-xl mx-auto">
       <div className="flex flex-col bg-gray-50 py-12 h-full">
-        <h1 className="text-5xl pb-4">Things to Do in Taniti</h1>
-        <p>
-          Discover amazing activities and experiences on our beautiful island
-        </p>
+        <div className="flex justify-center gap-20 items-center">
+          <div className="flex flex-col">
+            <h1 className="text-5xl pb-4">Things to Do in Taniti</h1>
+            <p>
+              Discover amazing activities and experiences on our beautiful
+              island
+            </p>
+          </div>
+          <div className="w-1/2">
+            <img src="/taniti.webp" alt="" className="rounded-lg"/>
+          </div>
+        </div>
 
         <div className="mt-10 bg-white rounded-lg py-6 flex w-full">
           <div className="flex flex-col w-1/2">
@@ -141,36 +151,36 @@ function Page() {
         </div>
 
         <div className="flex flex-wrap gap-6">
-        {filteredActivities.length > 0 ? (
-          filteredActivities.map((activity) => (
-            <div
-              key={activity.id}
-              className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm"
-            >
-              <div>
-                <img
-                  className="rounded-t-lg max-h-[200px] w-full object-cover"
-                  src={activity.image}
-                  alt={activity.title}
-                />
-              </div>
-              <div className="p-5">
-                <h5 className="mb-2 text-2xl font-bold text-gray-900">
-                  {activity.title}
-                </h5>
-                <p className="mb-3 text-gray-700">{activity.description}</p>
-              </div>
-              <div className="flex justify-between px-5 pb-5 items-center">
-                <p>{`From ${activity.price} - ${activity.difficulty}`}</p>
-                <div className="p-2 bg-teal-500 text-white rounded-lg cursor-pointer">
-                  Learn More
+          {filteredActivities.length > 0 ? (
+            filteredActivities.map((activity) => (
+              <div
+                key={activity.id}
+                className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm"
+              >
+                <div>
+                  <img
+                    className="rounded-t-lg max-h-[200px] w-full object-cover"
+                    src={activity.image}
+                    alt={activity.title}
+                  />
+                </div>
+                <div className="p-5">
+                  <h5 className="mb-2 text-2xl font-bold text-gray-900">
+                    {activity.title}
+                  </h5>
+                  <p className="mb-3 text-gray-700">{activity.description}</p>
+                </div>
+                <div className="flex justify-between px-5 pb-5 items-center">
+                  <p>{`From ${activity.price} - ${activity.difficulty}`}</p>
+                  <div className="p-2 bg-teal-500 text-white rounded-lg cursor-pointer">
+                    Learn More
+                  </div>
                 </div>
               </div>
-            </div>
-          ))
-        ) : (
-          <p className="text-gray-500">No activities match your selection.</p>
-        )}
+            ))
+          ) : (
+            <p className="text-gray-500">No activities match your selection.</p>
+          )}
         </div>
       </div>
     </div>
