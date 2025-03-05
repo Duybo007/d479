@@ -173,7 +173,7 @@ function page() {
                 Car Rental
               </div>
               <p>
-                Renting a car near the airport can be convenient, but it's
+                Renting a car near the airport can be convenient, but it&apos;s
                 important to plan ahead for a smooth experience.
               </p>
               <ul>
