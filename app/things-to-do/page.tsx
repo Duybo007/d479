@@ -6,7 +6,7 @@ import { PiFlowerLotusBold } from "react-icons/pi";
 import { MdLocalDining } from "react-icons/md";
 import { MdFamilyRestroom } from "react-icons/md";
 
-  
+
 interface ActivityType {
   name: string;
   icon: JSX.Element;
@@ -84,7 +84,7 @@ function Page() {
   return (
     <div className="h-screen max-w-screen-xl mx-auto">
       <div className="flex flex-col bg-gray-50 py-12 h-full">
-        <div className="flex justify-center gap-20 items-center">
+        <div className="flex justify-center gap-20 items-center text-black">
           <div className="flex flex-col">
             <h1 className="text-5xl pb-4">Things to Do in Taniti</h1>
             <p>
@@ -97,8 +97,8 @@ function Page() {
           </div>
         </div>
 
-        <div className="mt-10 bg-white rounded-lg py-6 flex w-full">
-          <div className="flex flex-col w-1/2">
+        <div className="mt-10 bg-white rounded-lg py-6 flex w-full text-black">
+          <div className="flex flex-col w-1/2 ">
             <p>Activity Type</p>
             <div className="flex gap-4 mt-3 flex-wrap">
               {activityTypes.map((type: ActivityType) => (
@@ -168,7 +168,7 @@ function Page() {
                   <p className="mb-3 text-gray-700">{activity.description}</p>
                 </div>
                 <div className="flex justify-between px-5 pb-5 items-center">
-                  <p>{`From ${activity.price} - ${activity.difficulty}`}</p>
+                  <p className="text-black">{`From ${activity.price} - ${activity.difficulty}`}</p>
                   <div className="p-2 bg-teal-500 text-white rounded-lg cursor-pointer">
                     Learn More
                   </div>

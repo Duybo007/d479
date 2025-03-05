@@ -61,7 +61,7 @@ function Page() {
   };
   return (
     <div className="h-screen max-w-screen-xl mx-auto">
-      <div className="flex flex-col bg-gray-50 py-12 h-full">
+      <div className="flex flex-col bg-gray-50 py-12 h-full text-black">
         <h1 className="text-5xl pb-4">Find Your Perfect Stay</h1>
 
         <div className="bg-white p-6 flex justify-between">
@@ -155,13 +155,13 @@ function Page() {
                     {acc.description}
                   </p>
                 </div>
-                <div className="flex mt-2">
+                <div className="flex mt-2 text-white">
                   <FaStar />
                   <div>{acc.rating}</div>
                 </div>
               </div>
               <div className="flex justify-between px-5 pb-5 items-center">
-                <p>${acc.price}/night</p>
+                <p className="text-white">${acc.price}/night</p>
                 <div className="p-2 bg-[#008080] text-white rounded-lg cursor-pointer">
                   Book Now
                 </div>

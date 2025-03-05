@@ -4,6 +4,7 @@ import { IoIosChatbubbles } from "react-icons/io";
 import { FaCheck } from "react-icons/fa";
 import { FaCreditCard } from "react-icons/fa";
 import { FaShieldAlt } from "react-icons/fa";
+import { FaTaxi } from "react-icons/fa6";
 
 function page() {
   return (
@@ -98,7 +99,8 @@ function page() {
               </div>
               <p>
                 Taniti uses the U.S. dollar. Most businesses accept major credit
-                cards, but it&apos;s good to carry some cash for smaller vendors.
+                cards, but it&apos;s good to carry some cash for smaller
+                vendors.
               </p>
               <ul>
                 <li className="flex gap-2">
@@ -134,8 +136,8 @@ function page() {
                 Safety Tips
               </div>
               <p>
-                Taniti is a safe destination, but it&apos;s always good to stay aware
-                of your surroundings and keep your belongings secure.
+                Taniti is a safe destination, but it&apos;s always good to stay
+                aware of your surroundings and keep your belongings secure.
               </p>
               <ul>
                 <li className="flex gap-2">
@@ -159,6 +161,45 @@ function page() {
               <img
                 className="h-[280px] object-cover w-full"
                 src="https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/kifepl2hvrpm3q2m5ro1"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div className="flex">
+            <div className="w-3/5 flex flex-col gap-8">
+              <div className="flex items-center gap-2 text-3xl">
+                <FaTaxi />
+                Car Rental
+              </div>
+              <p>
+                Renting a car near the airport can be convenient, but it's
+                important to plan ahead for a smooth experience.
+              </p>
+              <ul>
+                <li className="flex gap-2">
+                  <FaCheck />
+                  Compare prices online before arriving to find the best deals.
+                </li>
+                <li className="flex gap-2">
+                  <FaCheck />
+                  Check for hidden fees like insurance, toll charges, or
+                  additional driver costs.
+                </li>
+                <li className="flex gap-2">
+                  <FaCheck />
+                  Inspect the car thoroughly for any existing damage and report
+                  it before driving off.
+                </li>
+              </ul>
+              <div className="p-3 rounded-lg bg-[#008080] max-w-fit text-white">
+                Learn More
+              </div>
+            </div>
+            <div className="w-2/5">
+              <img
+                className="h-[280px] object-cover w-full"
+                src="https://www.wnct.com/wp-content/uploads/sites/99/2022/04/car-rental-sign.jpg?strip=1"
                 alt=""
               />
             </div>

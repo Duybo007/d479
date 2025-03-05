@@ -2,6 +2,7 @@ import { FaBed } from "react-icons/fa";
 import { FaCar } from "react-icons/fa";
 import { GiForkKnifeSpoon } from "react-icons/gi";
 import { FaCalendarAlt } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -38,15 +39,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex gap-20 bg-gray-100 py-8 px-3 justify-center">
-          <div className="flex flex-col gap-2 cursor-pointer py-5 px-10 justify-center items-center bg-white rounded-lg transition duration-300 ease-in-out transform hover:scale-105 hover:bg-yellow-300">
+        <div className="flex gap-20 bg-gray-100 py-8 px-3 justify-center text-black">
+          <Link href="/accommodations" className="flex flex-col gap-2 cursor-pointer py-5 px-10 justify-center items-center bg-white rounded-lg transition duration-300 ease-in-out transform hover:scale-105 hover:bg-yellow-300">
             <FaBed className="text-6xl" />
             <div>Book Accommodations</div>
-          </div>
-          <div className="flex flex-col gap-2 cursor-pointer py-5 px-10 justify-center items-center bg-white rounded-lg transition duration-300 ease-in-out transform hover:scale-105 hover:bg-yellow-300">
+          </Link>
+          <Link href="/tips" className="flex flex-col gap-2 cursor-pointer py-5 px-10 justify-center items-center bg-white rounded-lg transition duration-300 ease-in-out transform hover:scale-105 hover:bg-yellow-300">
             <FaCar className="text-6xl" />
             <div>Find Transportation</div>
-          </div>
+          </Link>
           <div className="flex flex-col gap-2 cursor-pointer py-5 px-10 justify-center items-center bg-white rounded-lg transition duration-300 ease-in-out transform hover:scale-105 hover:bg-yellow-300">
             <GiForkKnifeSpoon className="text-6xl" />
             <div>Local Cuisine</div>
